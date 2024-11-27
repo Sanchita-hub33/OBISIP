@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to top right, green, rgb(6, 133, 218));
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: rgb(6, 133, 218);
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#title, #description {
+    border: 1px solid rgb(83, 82, 82);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    font-family: monospace;
+}
+
+#add-button {
+    background: radial-gradient(red, rgb(132, 0, 255));
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tasks-container{
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;    
+    padding: 20px;
+    padding-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tasks-container h2 {
+    color: rgb(112, 4, 161);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.todo-item {
+    background-color: honeydew;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-item .task-info {
+    flex-grow: 1;
+}
+
+.todo-item h3 {
+    text-transform: capitalize;
+    color: rgb(3, 122, 143);
+    margin-bottom: 5px;
+}
+
+.todo-item p {
+    text-transform: capitalize;
+    color: rgb(204, 7, 128);
+    font-size: 14px;
+}
+
+.todo-item .task-actions {
+    display: flex;
+    gap: 10px;
+}
+
+#edit-task{
+    color:darkgreen;
+    font-weight: bolder;
+}
+
+#edit-task:hover{
+    color:rgb(4, 68, 4);
+    text-decoration: underline;
+}
+
+#del-task{
+    color: rgb(245, 43, 43);
+}
+
+#del-task:hover{
+    color: rgb(202, 7, 7);
+    text-decoration: underline;
+}
+
+.todo-item button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.todo-item .edit-input {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid rgb(185, 185, 185);
+    background-color: honeydew;
+    color: rgb(204, 7, 128);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.task-date {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
